@@ -1,0 +1,21 @@
+import random
+items=["paper","rock","scissors"]
+
+
+while True:
+    item = random.choice(items)
+    player = input('чи чи ко !')
+
+    if player=="paper" and item=="rock"  or  player == "rock" and item == "scissors" or  player == "scissors" and item == "paper":
+        print(f"я выбираю - {item}")
+        print(f'{player} бьёт {item}')
+        print("победа! ")
+        break
+    if player=="paper" and item=="paper" or  player == "rock" and item == "rock" or  player == "scissors" and item == "scissors":
+        print(f'{player} и {item} одно и тоже')
+        print("заново! ")
+    if player == "paper" and item == "scissors" or  player == "rock" and item == "paper" or  player == "scissors" and item == "rock":
+        print(f"я выбираю - {item}")
+        print(f'{item} бьёт {player}')
+        print("Вы проиграли! ")
+        break
