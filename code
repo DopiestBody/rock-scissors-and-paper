@@ -1,4 +1,4 @@
-woimport random
+import random
 items=["paper","rock","scissors"]
 
 
