@@ -1,10 +1,10 @@
-import random
+woimport random
 items=["paper","rock","scissors"]
 
 
 while True:
     item = random.choice(items)
-    player = input('чи чи ко !')
+    player = input(' one two three !')
 
     if player=="paper" and item=="rock"  or  player == "rock" and item == "scissors" or  player == "scissors" and item == "paper":
         print(f"я выбираю - {item}")
